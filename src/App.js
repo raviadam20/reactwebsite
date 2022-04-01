@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./App.css"
@@ -19,8 +19,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/reactwebsite" element={<Home />} />
       </Routes>
-      <p style={{ bottom: "0", textAlign: "center" }}>copyright © {year}</p>
+      <p className='m-0' style={{ bottom: "0", textAlign: "center" }}>copyright © {year}</p>
     </>
   );
 }
